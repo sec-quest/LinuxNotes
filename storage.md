@@ -1,6 +1,6 @@
-#storage management
+# storage management
 
-###partition types
+### partition types
 
 **fdisk**	**gdisk**
 20	8300 - linux filesystem

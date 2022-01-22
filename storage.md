@@ -1,4 +1,5 @@
-# storage management
+# storage management \
+Not exhaustive list of useful commands, options, etc. \
 
 ### partition types
 

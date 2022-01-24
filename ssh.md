@@ -39,6 +39,7 @@ scp user@ip:/what user@ip:/where
 ```sh
 rsync -av /what /where
 rsync -av /what user@ip:/where
+```
 - deletes all files which are not present in /what folder:
 ```sh
 rsync -av --delete /what /where

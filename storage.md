@@ -5,7 +5,7 @@ Not exhaustive, and still in build, list of useful commands, options, etc.
 ### useful commands
 
 | **command** | **description** |
-|             |                 |
+|-------------|-----------------|
 | lsblk | shows partition structure of the disk |
 | blkid | shows info about storage devices |
 | pvs | shows all physical volumes |
@@ -17,7 +17,7 @@ Not exhaustive, and still in build, list of useful commands, options, etc.
 ### most used partition types
 
 | **fdisk** | **gdisk** | **type** |
-|           |           |          |
+|-----------|-----------|----------|
 | 20 | 8300 | linux filesystem |
 | 19 | 8200 | linux swap |
 | 31 | 8e00 | linux lvm |

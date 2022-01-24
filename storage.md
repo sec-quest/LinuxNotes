@@ -1,36 +1,47 @@
-# storage management
-Not exhaustive list of useful commands, options, etc. \
-</br>
+## storage management
+Not exhaustive, and still in build, list of useful commands, options, etc.
+
 
 ### useful commands
 
-lsblk&emsp;&emsp;&emsp;&emsp;shows partition structure of the disk \
-blkid&emsp;&emsp;&emsp;&emsp;shows info about storage devices \
-</br>
-pvs&emsp;&emsp;&emsp;&emsp;shows all physical volumes \
-vgs&emsp;&emsp;&emsp;&emsp;shows all volume groups \
-lvs&emsp;&emsp;&emsp;&emsp;shows all logical volumes \
-</br>
+| **command** | **description** |
+|             |                 |
+| lsblk | shows partition structure of the disk |
+| blkid | shows info about storage devices |
+| pvs | shows all physical volumes |
+| vgs | shows all volume groups |
+| lvs | shows all logical volumes |
 
 
 
 ### most used partition types
 
-**fdisk**&emsp;**gdisk** \
-20&emsp;&emsp;8300&emsp;&emsp;linux filesystem \
-19&emsp;&emsp;8200&emsp;&emsp;linux swap \
-31&emsp;&emsp;8e00&emsp;&emsp;linux lvm \
-</br>
+| **fdisk** | **gdisk** | **type** |
+|           |           |          |
+| 20 | 8300 | linux filesystem |
+| 19 | 8200 | linux swap |
+| 31 | 8e00 | linux lvm |
+
 
 ### creating lvm
 
-partitions in 'linux lvm' type \
-pvcreate /dev/partition1 /dev/partition2 \
-vgcreate -s 1M vgname /dev/partition1 /dev/partition2 \
-&emsp;&emsp;&emsp;&emsp;-s 1M resizes default extent (4M) to 1M \
-lvcreate -n lvname -L 1G vgname \ 
-lvcreate -n lvname -l 80%FREE vgname \
-lvcreate -s -n lvname-snap -l 10M /dev/vgname/lvname \
-&emsp;&emsp;&emsp;&emsp;creates snapshot of lvname lvm \
-</br>
+- create partitions in 'linux lvm' type
+- create physical volumes
+```sh
+pvcreate /dev/partition1 /dev/partition2
+```
+- create volume group (-s 1M resizes default extent - 4M - to 1M)
+```sh
+vgcreate -s 1M vgname /dev/partition1 /dev/partition2
+```
+- create logical volume
+```sh
+lvcreate -n lvname -L 1G vgname
+lvcreate -n lvname -l 80%FREE vgname
+```
+- create snapshot of given logical volume
+```sh
+lvcreate -s -n lvname-snap -l 10M /dev/vgname/lvname
+```
+
 

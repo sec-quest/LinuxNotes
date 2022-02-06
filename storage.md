@@ -18,9 +18,9 @@ Not exhaustive, and still in build, list of useful commands, options, etc.
 
 | **fdisk** | **gdisk** | **type** |
 |-----------|-----------|----------|
-| 20 | 8300 | linux filesystem |
-| 19 | 8200 | linux swap |
-| 31 | 8e00 | linux lvm |
+| 83 | 8300 | linux filesystem |
+| 82 | 8200 | linux swap |
+| 8e | 8e00 | linux lvm |
 
 
 ### creating lvm

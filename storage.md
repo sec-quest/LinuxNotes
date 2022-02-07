@@ -16,11 +16,12 @@ Not exhaustive, and still in build, list of useful commands, options, etc.
 
 ### most used partition types
 
-| **fdisk** | **gdisk** | **type** |
+| **mbr - fdisk** | **gpt - gdisk** | **type** |
 |-----------|-----------|----------|
 | 83 | 8300 | linux filesystem |
 | 82 | 8200 | linux swap |
 | 8e | 8e00 | linux lvm |
+| fd | fd00 | linux RAID |
 
 
 ### creating lvm

@@ -20,13 +20,13 @@ Not exhaustive, and still in build, list of useful commands, options, etc.
 |-----------|-----------|----------|
 | 83 | 8300 | linux filesystem |
 | 82 | 8200 | linux swap |
-| 8e | 8e00 | linux lvm |
+| 8e | 8e00 | linux LVM |
 | fd | fd00 | linux RAID |
 
 
 ### creating lvm
 
-- create partitions in 'linux lvm' type
+- create partitions in 'linux LVM' type
 - create physical volumes
 ```sh
 pvcreate /dev/partition1 /dev/partition2

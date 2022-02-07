@@ -35,7 +35,7 @@ pvcreate /dev/partition1 /dev/partition2
 ```sh
 vgcreate -s 1M vgname /dev/partition1 /dev/partition2
 ```
-- create logical volume
+- create logical volume with a name of `lvname` and a size of 1GiB or 80% of free space
 ```sh
 lvcreate -n lvname -L 1G vgname
 lvcreate -n lvname -l 80%FREE vgname

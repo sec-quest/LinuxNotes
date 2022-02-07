@@ -1,5 +1,5 @@
 ## storage management
-Not exhaustive, and still in build, list of useful commands, options, etc.
+Not exhaustive, and still in build, list of useful commands, options, files, etc.
 
 
 ### useful commands

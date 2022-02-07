@@ -31,7 +31,7 @@ Not exhaustive, and still in build, list of useful commands, options, etc.
 ```sh
 pvcreate /dev/partition1 /dev/partition2
 ```
-- create volume group (-s 1M resizes default extent - 4M - to 1M)
+- create volume group with the name of vgname (-s 1M resizes default extent - 4M - to 1M) 
 ```sh
 vgcreate -s 1M vgname /dev/partition1 /dev/partition2
 ```

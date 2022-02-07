@@ -40,7 +40,7 @@ vgcreate -s 1M vgname /dev/partition1 /dev/partition2
 lvcreate -n lvname -L 1G vgname
 lvcreate -n lvname -l 80%FREE vgname
 ```
-- create snapshot of given logical volume
+- create snapshot of given logical volume with a name of `lvname-snap` and size of 10MiB
 ```sh
 lvcreate -s -n lvname-snap -l 10M /dev/vgname/lvname
 ```

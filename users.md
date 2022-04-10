@@ -7,4 +7,4 @@ Not exhaustive, and still in build, list of useful commands, options, files, etc
 - /etc/passwd
 - /etc/sudoers
 
-
+## important commands

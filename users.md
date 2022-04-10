@@ -12,3 +12,4 @@ Not exhaustive, and still in build, list of useful commands, options, files, etc
 ```sh
 useradd username
 ```
+- adds a new user

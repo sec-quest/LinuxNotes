@@ -8,3 +8,7 @@ Not exhaustive, and still in build, list of useful commands, options, files, etc
 - /etc/sudoers
 
 ## important commands
+
+```sh
+useradd username
+```

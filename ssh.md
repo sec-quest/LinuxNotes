@@ -4,7 +4,7 @@ Not exhaustive, and still in build,  list of useful commands, options, etc.
 
 ### useful commands
 
-- installs the OpenSSH server:
+- installs the OpenSSH server on the machine:
 ```sh
 yum install openssh -y
 ```

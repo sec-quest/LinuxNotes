@@ -16,7 +16,7 @@ systemctl enable --now sshd
 ```sh
 ssh-keygen
 ```
-- copies keys to a given server:
+- copies keys to a server with a given IP address:
 ```sh
 ssh-copy-id 192.168.1.1
 ```
